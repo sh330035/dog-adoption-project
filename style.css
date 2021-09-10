@@ -332,6 +332,15 @@ header {
   margin-bottom: 0.9rem;
   color: #5e5c5c;
 }
+/* footer CSS */
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background: #4a4a4a;
+  color: white;
+  letter-spacing: 2px;
+}
 
 /********* 電腦版樣式 *********/
 @media screen and (min-width: 768px) {
