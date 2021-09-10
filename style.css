@@ -233,6 +233,7 @@ header {
 .card {
   width: 100%;
   height: 100%;
+  position: relative;
   /*超出容器的圖片隱藏*/
   overflow: hidden;
   /*陰影*/
@@ -246,10 +247,37 @@ header {
   height: 300px;
   display: block;
   object-fit: cover;
+  background-color: gray;
+  transition: opacity 0.3s ease-out;
 }
 
 .card-text {
-  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  /* display: none; */
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.card:hover .card-text {
+  opacity: 1;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.2em;
+}
+
+.card-description {
+  font-size: 1rem;
+}
+
+.card:hover .card-img {
+  opacity: 0.4;
 }
 
 /********* 電腦版樣式 *********/
