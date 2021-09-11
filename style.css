@@ -342,6 +342,30 @@ footer {
   letter-spacing: 2px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* 網頁捲軸【寬度】 */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* 網頁捲軸【背景】顏色 */
+::-webkit-scrollbar-track {
+  background: #267c99;
+}
+
+/* 網頁捲軸【把手】顏色 */
+::-webkit-scrollbar-thumb {
+  background: #aec3d7;
+}
+
+/* 網頁捲軸【滑過時】把手的顏色 */
+::-webkit-scrollbar-thumb:hover {
+  background: #6ca7dd;
+}
+
 /********* 電腦版樣式 *********/
 @media screen and (min-width: 768px) {
   .action {
